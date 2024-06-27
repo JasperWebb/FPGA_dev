@@ -1,4 +1,4 @@
-# ice_makefile_blinky
+# ice_makefile_quadrature_decoder
 
 Example project using a standard [Makefile](https://en.wikipedia.org/wiki/Make_%28software%29)
 to build a project that can be loaded onto the board.
@@ -10,5 +10,4 @@ Build with `make` and deploy it to the pico-ice with `make prog`, and `make gate
 [uf2 image](https://pico-ice.tinyvision.ai/programming_the_fpga.html#using-a-drag-drop-or-file-copy-scheme)
 to program with drag-and-drop.
 
-A very complete `Makefile` example is provided for the UPduino v3 by Xark:
-<https://github.com/XarkLabs/upduino-example/>
+Decodes simple AB encoder, lights up onboard LED to indicated direction of rotation. Green for clockwise and red for counter clockwise. Blue is supposed to light up to indicate full rotation (600 pulses) but need to work to lengthen pulse as it currently lasts just one clock cycle. 
